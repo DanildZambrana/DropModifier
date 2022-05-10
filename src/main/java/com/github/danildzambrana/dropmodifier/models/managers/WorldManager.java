@@ -55,7 +55,7 @@ public class WorldManager {
     /**
      * Find all worlds in config and load them.
      */
-    private void loadWorlds() {
+    public void loadWorlds() {
         ConfigurationSection section = configuration.getConfigurationSection("");
         if (section == null) {
             return;
