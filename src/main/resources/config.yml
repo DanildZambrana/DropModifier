@@ -1,11 +1,11 @@
 # world-name:
-#  Entity-name:
-#    - Banned Item
+#  Entity-name: https://papermc.io/javadocs/paper/1.17/org/bukkit/entity/EntityType.html
+#    - Banned Item https://papermc.io/javadocs/paper/1.17/org/bukkit/Material.html
 
 world:
   SKELETON:
     - BOW
 
-world-nether:
-  PIGMAN:
-    - GOLD_SWORD
+world_nether:
+  PIGLIN:
+    - GOLDEN_SWORD
