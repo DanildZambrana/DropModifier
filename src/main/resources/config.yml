@@ -1,0 +1,11 @@
+# world-name:
+#  Entity-name:
+#    - Banned Item
+
+world:
+  SKELETON:
+    - BOW
+
+world-nether:
+  PIGMAN:
+    - GOLD_SWORD
