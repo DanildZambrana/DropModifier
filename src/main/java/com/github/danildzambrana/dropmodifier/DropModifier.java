@@ -1,17 +1,17 @@
 package com.github.danildzambrana.dropmodifier;
 
+import com.github.danildzambrana.dropmodifier.models.managers.WorldManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class DropModifier extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        FileManager config = new FileManager(this, "config.yml", "config.yml").load(false);
+        WorldManager worldManager = new WorldManager(getLogger(), config.getBukkitFile());
 
-    }
-
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
+        getLogger().info("Loading entities!");
+        worldManager.loadWorlds();
+        getLogger().info("Configuration info loaded!");
     }
 }
