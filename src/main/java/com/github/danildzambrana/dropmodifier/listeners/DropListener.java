@@ -8,7 +8,11 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDeathEvent;
 
 public class DropListener implements Listener {
-    private WorldManager worldManager;
+    private final WorldManager worldManager;
+
+    public DropListener(WorldManager worldManager) {
+        this.worldManager = worldManager;
+    }
 
     @EventHandler
     public void onMobDrop(EntityDeathEvent event) {
