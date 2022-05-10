@@ -1,8 +1,8 @@
-name: Drop Modifier
+name: DropModifier
 version: '${project.version}'
 main: com.github.danildzambrana.dropmodifier.DropModifier
 api-version: 1.17
 prefix: DropModifier
-authors: [ DanildZambrana ]
+authors: [DanildZambrana]
 description: Remove specific item dropped by an entity
 website: https://github.com/DanildZambrana/DropModifier
