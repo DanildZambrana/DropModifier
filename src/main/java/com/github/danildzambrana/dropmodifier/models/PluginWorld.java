@@ -15,6 +15,11 @@ public class PluginWorld {
         this.worldName = worldName;
     }
 
+    public PluginWorld(String worldName, Set<PluginEntity> entities) {
+        this.worldName = worldName;
+        this.entities = entities;
+    }
+
     public String getWorldName() {
         return worldName;
     }

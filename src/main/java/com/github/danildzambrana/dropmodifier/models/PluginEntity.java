@@ -18,6 +18,11 @@ public class PluginEntity {
         this.type = type;
     }
 
+    public PluginEntity(EntityType type, Set<Material> removedItems) {
+        this.type = type;
+        this.removedItems = removedItems;
+    }
+
     public EntityType getType() {
         return type;
     }
