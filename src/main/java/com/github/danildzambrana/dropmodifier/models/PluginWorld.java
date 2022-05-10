@@ -1,7 +1,10 @@
 package com.github.danildzambrana.dropmodifier.models;
 
+import org.bukkit.entity.EntityType;
+
 import java.util.HashSet;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.Set;
 
 /**
@@ -31,6 +34,15 @@ public class PluginWorld {
 
     public Set<PluginEntity> getEntities() {
         return entities;
+    }
+
+    /**
+     * Get entity by provided type.
+     * @param type the type to find.
+     * @return {@link Optional} instance with result.
+     */
+    public Optional<PluginEntity> getEntityByType(EntityType type) {
+        return entities.stream().filter(pluginEntity -> pluginEntity.getType() == type).findFirst();
     }
 
     public PluginWorld setEntities(Set<PluginEntity> entities) {
